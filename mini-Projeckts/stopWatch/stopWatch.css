@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #0c0c14;
+    --card: #14141f;
+    --card-border: #222238;
+    --text: #e4e4f0;
+    --text-muted: #6e6e8a;
+    --accent: #ff6b6b;
+    --green: #51cf66;
+    --green-glow: rgba(81, 207, 102, 0.2);
+    --accent-glow: rgba(255, 107, 107, 0.2);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.6rem;
+    margin-bottom: 32px;
+}
+
+
+.display {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 28px 40px;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    margin-bottom: 28px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.display.running {
+    border-color: var(--green);
+    box-shadow: 0 0 40px var(--green-glow);
+}
+
+
+.ms {
+    font-size: 2rem;
+    color: var(--text-muted);
+}
+
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-start {
+    background: var(--green);
+    color: #0c0c14;
+}
+
+.btn-pause {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn-reset {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--card-border);
+}

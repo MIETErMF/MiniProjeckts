@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bg-dark: #050e39;
+    --star-yellow: #FFFF00;
+    --bg-light: #87CEEB;
+}
+
+.sky {
+    background-color: var(--bg-light);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.darkBg {
+    background-color: var(--bg-dark);
+}
+
+.star path {
+    display: none;
+}
+
+.starYellow path {
+    fill: var(--star-yellow);
+    display: block;
+}
+
+
+
+.sun {
+    display: block;
+    fill: var(--star-yellow);
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sun.active {
+    display: none ;
+}
+
+
+
+.cloud{
+    display: block;
+}
+
+.cloud.active{
+    display: none;
+}
+
+
+.moon{
+    display: none;
+    fill: var(--star-yellow);
+    height: 150px;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.moon.active{
+    display: block;
+}
+
+.moon path {
+    fill: var(--star-yellow);
+}
