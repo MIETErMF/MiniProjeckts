@@ -1,0 +1,31 @@
+
+body {
+    background: #1e1e2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#result {
+    color: #cdd6f4;
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background: #313244;
+    color: #cdd6f4;
+    border: none;
+    padding: 10px 24px;
+    margin: 6px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
